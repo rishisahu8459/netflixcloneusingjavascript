@@ -31,6 +31,7 @@ header img{
     height: 50%;
     width: 100%;
     object-fit: cover;
+    z-index: 2;
 
 }
 .header_desc {

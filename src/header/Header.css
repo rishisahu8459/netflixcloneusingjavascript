@@ -1,0 +1,90 @@
+header{
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-image: url("https://wallpaperaccess.com/full/4408082.jpg");
+    background-size: cover;
+    background-position: center;
+
+}
+.header_inner_shadow{
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(0deg, rgb(20,20,20,1) 0% , rgb(20,20,20,0) 100%);
+    background: linear-gradient(180deg, rgb(20,20,20,0.7) 0% , rgb(20,20,20,0) 100%);
+}
+.header_container{
+    margin-left: 5vw;
+    padding-top: 10vw;
+
+}
+.header_billboard{
+    width: 24vw;
+    object-fit: cover;
+    z-index: 1;
+    position: relative;
+}
+header img{
+    height: 50%;
+    width: 100%;
+    object-fit: cover;
+
+}
+.header_desc {
+    z-index: 2;
+    position: relative;
+    color: #fff;
+    height: 10vh;
+    width: 80%;
+    font-size: 1.1vw;
+    font-weight: 500;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+   
+}
+.header_buttons{
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+    z-index: 2;
+    position: relative;
+}
+.header_button{
+    margin-top: 10px;
+    
+    border-radius: 4px;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 0.7rem;
+    padding-left: 0.7rem;
+    padding-right: 2.5rem ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.header_button svg{
+    margin-right: 0.4rem;
+
+
+}
+.play_button{
+    background-color: #fff;
+    margin-right: 1rem;
+}
+.play_button:hover {
+    background-color: rgb(121, 0, 0);
+}
+.more_info_button{
+    background-color: rgba(30, 30, 30, 0.947);
+    color: #fff;
+
+}
+.more_info_button:hover {
+    background-color: rgba(30, 30, 30, 0.8);
+
+}
+

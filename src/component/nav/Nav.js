@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import './Nav.css';
 //import { useState, useEffect } from 'react';
 
@@ -7,11 +8,25 @@ import './Nav.css';
 
 const Nav = ( )=> {
    
-   
+    const  [show, setShow] =  useState(false);
+    const scrollHandler = ()=> {
+      if (window.scrollY > 10){
+         setShow(true);
+      }
+      else{
+         setShow(false);
+      }
+   }
+    useEffect(()=>{
+      window.addEventListener("scroll", scrollHandler );
+
+      
+      },[]);
 
 
     return (
-    <nav>
+    <nav style={ {backgroundColor: show? 'rgb(20,20,20)' : 'transparent'
+   }}>
         <div>
             <section>
             <img  id='navlogo' src="https://images.ctfassets.net/4cd45et68cgf/7LrExJ6PAj6MSIPkDyCO86/542b1dfabbf3959908f69be546879952/Netflix-Brand-Logo.png?w=684&h=456" alt="logo" />

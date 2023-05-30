@@ -1,11 +1,14 @@
 header{
-    height: 100vh;
+    height: 108vh;
+  
     background-repeat: no-repeat;
     background-image: url("https://wallpaperaccess.com/full/4408082.jpg");
     background-size: cover;
-    background-position: center;
+    background-position: center center;
+    margin-bottom: 10vh;
 
 }
+
 .header_inner_shadow{
     z-index: 0;
     position: absolute;
@@ -26,12 +29,14 @@ header{
     object-fit: cover;
     z-index: 1;
     position: relative;
+    margin: 1.2vw;
 }
 header img{
     height: 50%;
-    width: 100%;
+    display: flex;
     object-fit: cover;
     z-index: 2;
+  
 
 }
 .header_desc {

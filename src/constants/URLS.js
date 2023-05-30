@@ -1,28 +1,48 @@
-const RowData = [
+const URLS = {
+    trending: '/trending/all/day',
+    oridinals: '/discover/movie?sort_by=popularity.desc',
+    rated: '/movie/top_rated',
+    action: '/discover/movie?with_genres=28',
+    comedy: '/discover/movie?with_genres=35',
+    horror: '/discover/movie?with_genres=27',
+    romance: '/discover/movie?with_genres=10749',
+    documentaries: '/discover/movie?with_genres=99',
+  };
+  
+  const RowData = [
     {
-    title: 'Trending',
-    url: '/trending/all/day',
+      title: 'Trending',
+      url: URLS.trending,
     },
     {
-        title: 'Originals',
-    url: '/discover/movie?sort_by=popularity.desc',
+      title: 'Oridinals',
+      url: URLS.oridinals,
     },
     {
-        title: 'Action',
-        url: '/discover/movie?with_generes=28',
+      title: 'Rated',
+      url: URLS.rated,
     },
     {
-        title: 'Comedy',
-        url: '/discover/movie?with_generes=35',
+      title: 'Action',
+      url: URLS.action,
     },
     {
-        title: 'Horror',
-        url: '/discover/movie?with_generes=27',
+      title: 'Comedy',
+      url: URLS.comedy,
     },
     {
-        title: 'Romance',
-        url: '/discover/movie?with_generes=10749',
+      title: 'Horror',
+      url: URLS.horror,
     },
-
-];
-export default RowData;
+    {
+      title: 'Romance',
+      url: URLS.romance,
+    },
+    {
+      title: 'Documentaries',
+      url: URLS.documentaries,
+    },
+  ];
+  
+  export default RowData;
+  

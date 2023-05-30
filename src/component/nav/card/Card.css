@@ -1,8 +1,6 @@
 .card_poster {
     height: 130px;
-    border-radius: 5px;
     object-fit: contain;
-
-    margin-right: 10px;
-    overflow-y: scroll;
+    border-radius: 5px;
+    margin: 2px;
 }

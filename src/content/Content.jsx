@@ -1,21 +1,17 @@
 import './Content.css'
-import  axios from'axios';
-import { useEffect, useState  } from 'react';
-export default function Content() {
-  const [movies , setMovies] = useState([]);
+import RowData from '../constants/URLS';
+import Row from '../component/nav/row/Row';
 
-    const getMovies = async()=>{
-    const response = await axios.get("https://api.themoviedb.org/3/movie/top_rated", {
-      params: {
-        api_key : "1650be052ad504dcacebe6d51574ee3c",
-      },
-    });
-    setMovies(response.data.results);
-  };
-  useEffect(()=> {
-    getMovies();
-  },[]);
-  console.log(movies);
+export default function Content() {
+  
   return (
-    <div className='content-wrapper'>Content</div>  );
+    <div className='content-wrapper'>
+    { RowData.map((el)=>{
+      return <Row title={el.title} url={el.url}></Row>
+
+    }
+    )}
+    </div>
+    
+    );
 }
